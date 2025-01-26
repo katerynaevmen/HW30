@@ -1,0 +1,38 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: move-box;
+    animation-duration: 5000ms;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+
+@keyframes move-box {
+    0% {
+        transform: translate(10px);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(10px, 400px);
+        background-color: red;
+    }
+    
+    50% {
+        transform: translate(400px, 400px);
+        background-color: blue;
+    }
+
+    75% {
+        transform: translate(400px, 10px);
+        background-color: green;
+    }
+
+    100% {
+        transform: translate(10px, 10px);
+        background-color: yellow;
+    }
+}
